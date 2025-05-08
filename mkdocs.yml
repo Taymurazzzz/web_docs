@@ -1,0 +1,29 @@
+site_name: 'Web Semester 2'
+theme:
+  name: 'material'
+
+nav:
+  - Главная: index.md
+  - Лабораторная работа 1:
+    - Модели: models.md
+    - API:
+        - Users: users.md
+        - Tasks: tasks.md
+        - Tags: tags.md
+        - Projects: projects.md
+        - Routines: routines.md
+        - Notifications: notifications.md
+        - Timelogs: timelogs.md
+    - Auth: auth.md
+
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [../lab1]  # где лежит код FastAPI
+  - autorefs
+
+extra_css:
+  - stylesheets/extra.css
