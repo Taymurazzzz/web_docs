@@ -36,7 +36,7 @@ class Solution:
             current = current.next
         return head
 ```
-![задача 1](assets/img/leet1.png)
+![задача 1](https://github.com/Taymurazzzz/web_docs/blob/main/docs/assets/images/leet1.PNG?raw=true)
 ## Вторая задача
 ### Longest Substring Without Repeating Characters
 Given a string *s*, find the length of the longest substring without duplicate characters.
@@ -67,4 +67,4 @@ class Solution:
         else:
             return max(numlist)
 ```
-![задача 2](assets/img/leet2.png)
+![задача 2](https://github.com/Taymurazzzz/web_docs/blob/main/docs/assets/images/leet2.PNG?raw=true)

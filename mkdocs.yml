@@ -25,6 +25,7 @@ plugins:
         python:
           paths: [../lab1]  # где лежит код FastAPI
   - autorefs
+  - glightbox
 
 extra_css:
   - stylesheets/extra.css
