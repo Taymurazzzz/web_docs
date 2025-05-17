@@ -15,6 +15,7 @@ nav:
         - Notifications: notifications.md
         - Timelogs: timelogs.md
     - Auth: auth.md
+    - LeetCodes: leetcode.md
 
 
 plugins:
