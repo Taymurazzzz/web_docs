@@ -52,7 +52,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     <body dir="ltr">
@@ -749,7 +758,7 @@
             current = current.next
         return head
 </code></pre>
-<p><img alt="задача 1" src="assets/img/leet1.png" /></p>
+<p><a class="glightbox" href="https://github.com/Taymurazzzz/web_docs/blob/main/docs/assets/images/leet1.PNG?raw=true" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="задача 1" src="https://github.com/Taymurazzzz/web_docs/blob/main/docs/assets/images/leet1.PNG?raw=true" /></a></p>
 <h2 id="_3">Вторая задача</h2>
 <h3 id="longest-substring-without-repeating-characters">Longest Substring Without Repeating Characters</h3>
 <p>Given a string <em>s</em>, find the length of the longest substring without duplicate characters.</p>
@@ -779,7 +788,7 @@
         else:
             return max(numlist)
 </code></pre>
-<p><img alt="задача 2" src="assets/img/leet2.png" /></p>
+<p><a class="glightbox" href="https://github.com/Taymurazzzz/web_docs/blob/main/docs/assets/images/leet2.PNG?raw=true" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="задача 2" src="https://github.com/Taymurazzzz/web_docs/blob/main/docs/assets/images/leet2.PNG?raw=true" /></a></p>
 
 
 
@@ -834,5 +843,7 @@
       <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
